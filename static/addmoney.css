@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.h1 {
+    color: #2c3e50; /* Darker shade of blue */
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.7), rgba(155, 89, 182, 0.7)); /* Gradient with vibrant colors */
+    color: white;
+    font-weight: bold;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    border: 3px solid #ecf0f1; /* Light grey */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+button {
+    background-color: #97b928; /* Vibrant red */
+    color: rgb(83, 40, 167);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #119892; /* Darker shade of red */
+}
